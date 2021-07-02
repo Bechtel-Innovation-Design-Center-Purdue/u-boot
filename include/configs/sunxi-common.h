@@ -15,6 +15,9 @@
 #include <asm/arch/cpu.h>
 #include <linux/stringify.h>
 
+#define CONFIG_BOOT_RETRY_TIME 15 //command prompt will timeout
+#define CONFIG_RESET_TO_RETRY     //required for above on this chip
+
 #ifdef CONFIG_OLD_SUNXI_KERNEL_COMPAT
 /*
  * The U-Boot workarounds bugs in the outdated buggy sunxi-3.4 kernels at the
